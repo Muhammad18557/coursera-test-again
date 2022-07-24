@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title> Simple Selectors </title>
+<style>
+
+/* all h2 elements */
+
+h2{
+	color: red;
+	text-align:center;
+	}
+
+/* all with class = "highlight" elements */
+
+.highlight{
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	background-color: green;
+	opacity: .6;
+}
+/* element with id="mainPoint" */
+#mainPoint {
+	font-size: 24px;
+	font-weight: bold;
+	background-color: red;
+	opacity: .7;
+}
+
+/* all p and h1 elements */
+p,h1 {
+	color:blue;
+	text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+	<h1> Simple selectors (h1 tag) </h1>
+	<h2> Subheading 2 that we styled using element selector with color:red and text-align:center </h2>
+
+	<p class="highlight"> 
+		A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. An example is as follows: <br> 
+		"There are many different kinds of animals that live in China. 2 Tigers and leopards are animals that live in China's forests in the north. 2 In the jungles, monkeys swing in the trees, and elephants walk through the brush. The cities in China are filled with millions of people. 2 There are camels in the deserts in China that people use for transportation. 3 Lots of different kinds of animals make their home in China."
+	<h2> Subheading 2 again </h2>
+	<p> This content is also inside p tag but without class = "highlight" this time. This is supposed to be a complete paragraph </p>
+	<div>
+	This is the main point of the entire lecture. So, attribute <span id="mainPoint"> id="mainPoint".</span>
+	</div> 
+</body>
