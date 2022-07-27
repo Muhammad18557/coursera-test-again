@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Background</title>
+<style>
+#bg {
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+  background-image: url("yaakov.png"); /* initiallt repeats vertically and horizontally to fill up the height and width*/
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  /* alternatively: all in one option */
+  background: url("yaakov.png") no-repeat center blue;
+}
+
+</style>
+</head>
+<body>
+<h1>The Background Property</h1>
+
+<div id="bg">Background properties are fun!</div>
+</body>
+</html>
