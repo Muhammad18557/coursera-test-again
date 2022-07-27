@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+}
+
+#box {
+  background-color: blue;
+  padding: 10px 10px 10px 10px; /* top, right, botoom, left */
+  border: 5px solid black;
+  margin: 40px;
+  width: 300px;
+  box-sizing: border-box; /* to make sure that the width of the entire thing (content+border+padding) is our specidied width i.e 300 here */
+  /* by default, it is content-box */ 
+  margin-top: 20px; /* won't make any difference unless this value is more than margin-bottom of h1*/
+  /* THE LARGER VALUE WINS */
+  /* if we were to define a constraining height too that, together with the defined width, wouldn't be able to hold the text, there will be overfolow!
+  we can use overflow: visible/auto/hidden etc; */
+  overflow: scroll;
+}
+#content {
+  background-color: #90EE90; /*green*/
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+</div>
+
+
+</body>
+</html>
